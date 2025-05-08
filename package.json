@@ -5,7 +5,6 @@
     "dev": "next dev --turbopack",
     "start": "next start",
     "postinstall": "pnpm rebuild bcrypt --build-from-source"
-
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
@@ -28,8 +27,8 @@
     "@types/react": "19.0.7",
     "@types/react-dom": "19.0.3",
     "autoprefixer": "10.4.20",
+    "node-gyp": "^11.2.0",
     "postcss": "8.5.1",
     "tailwindcss": "3.4.17"
   }
-  
 }

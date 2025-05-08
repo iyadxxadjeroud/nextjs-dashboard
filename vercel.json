@@ -1,0 +1,8 @@
+{
+  "build": {
+    "command": "next build",
+    "env": {
+    },
+    "postinstall": "node-gyp rebuild bcrypt"
+  }
+}
