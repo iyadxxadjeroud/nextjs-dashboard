@@ -3,9 +3,8 @@ module.exports = {
     readPackageJson(pkg) {
       if (pkg.name === 'bcrypt') {
         pkg.scripts = pkg.scripts || {};
-        delete pkg.scripts.preinstall;
-        delete pkg.scripts.install;
-        delete pkg.scripts.postinstall;
+        // Force a rebuild of bcrypt using node-gyp
+        pkg.scripts.postinstall = 'node-gyp rebuild';
       }
       return pkg;
     },
